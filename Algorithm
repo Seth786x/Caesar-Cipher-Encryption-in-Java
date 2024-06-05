@@ -1,0 +1,20 @@
+1. Input the text and encryption key.
+2. Define a function to encrypt the text using the Caesar cipher:
+     a. Initialize an empty string to store the encrypted text.
+     b. Iterate through each character in the text:
+         i. If the character is uppercase, shift it by (character - 'A' + key) % 26.
+         ii. If the character is lowercase, shift it by (character - 'a' + key) % 26.
+         iii. Append the shifted character to the encrypted text.
+         iv. If the character is not an alphabet, append it unchanged.
+     c. Return the encrypted text.
+3. Define a function to decrypt the text using the Caesar cipher:
+     a. Initialize an empty string to store the decrypted text.
+     b. Iterate through each character in the text:
+         i. If the character is uppercase, shift it by (character - 'A' - key + 26) % 26.
+         ii. If the character is lowercase, shift it by (character - 'a' - key + 26) % 26.
+         iii. Append the shifted character to the decrypted text.
+         iv. If the character is not an alphabet, append it unchanged.
+     c. Return the decrypted text.
+4. Encrypt the input text using the encryption key.
+5. Decrypt the encrypted text using the same encryption key.
+6. Output the original text, encrypted text, and decrypted text.
